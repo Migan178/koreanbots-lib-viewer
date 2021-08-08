@@ -1,6 +1,5 @@
-const SELECTOR = "#__next > div > div.iu-is-the-best.min-h-screen.text-black.dark\\:text-gray-100.dark\\:bg-discord-dark.bg-white > div > div > div > div.lg\\:flex.lg\\:flex-row-reverse > div.mb-1.w-full.lg\\:w-1\\/4 > div.grid.gap-4.grid-cols-2.px-4.py-4.text-black.dark\\:text-gray-400.dark\\:bg-discord-black.bg-little-white.rounded-sm"
-
 const checkExist = setInterval(function() {
+    const SELECTOR = "#__next > div > div.iu-is-the-best.min-h-screen.text-black.dark\\:text-gray-100.dark\\:bg-discord-dark.bg-white > div > div > div > div.lg\\:flex.lg\\:flex-row-reverse > div.mb-1.w-full.lg\\:w-1\\/4 > div.grid.gap-4.grid-cols-2.px-4.py-4.text-black.dark\\:text-gray-400.dark\\:bg-discord-black.bg-little-white.rounded-sm"
     if (document.querySelectorAll(SELECTOR).length) {
         const infoDiv = document.querySelector(SELECTOR)
         libChild = document.createElement("div")
