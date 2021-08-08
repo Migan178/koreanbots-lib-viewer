@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Koreanbots Lib Viewer",
+    "version": "0.1",
+    "icons": {"32": "32icon.png", "48": "48icon.png", "128": "128icon.png"},
+    "default_locale": "ko",
+    "description": "Show lib of koreanbots bot",
+    "content_scripts": [
+        {
+          "run_at": "document_start",
+          "matches": [
+            "https://koreanbots.dev/bots/*"
+          ],
+          "js": [
+            "scripts/index.js"
+          ]
+        }
+    ]
+}
