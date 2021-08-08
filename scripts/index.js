@@ -2,7 +2,6 @@ const SELECTOR = "#__next > div > div.iu-is-the-best.min-h-screen.text-black.dar
 
 const checkExist = setInterval(function() {
     if (document.querySelectorAll(SELECTOR).length) {
-        console.log("Found element, starting update element")
         const infoDiv = document.querySelector(SELECTOR)
         libChild = document.createElement("div")
         libChild.innerText = "라이브러리"
